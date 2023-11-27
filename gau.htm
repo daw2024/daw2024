@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Colocar titulo</title>
+
+		<style type="text/css">
+            .outer {
+            	width: 100%;
+            	height: 200px;
+            	margin: 0 auto;
+            }
+              
+            .container {
+            	width: 200px;
+            	float: left;
+            	height: 200px;
+            }
+
+            .highcharts-yaxis-grid .highcharts-grid-line {
+            	display: none;
+            }
+
+            @media (max-width: 600px) {
+            	.outer {
+            		width: 100%;
+            		height: auto;
+            	}
+            	.container {
+            		width: 300px;
+            		float: none;
+            		margin: 0 auto;
+            	}
+
+            }
+		</style>
+	</head>
+	<body>
+        <script src="jsh/highcharts.js"></script>
+        <script src="jsh/highcharts-more.js"></script>
+        <script src="jsh/modules/solid-gauge.js"></script>
+        <script src="jsh/modules/exporting.js"></script>
+        <script src="jsh/modules/export-data.js"></script>
+        <div class="outer">
+            <div id="container-speed" class="container"></div>
+            <div id="container-rpm" class="container"></div>
+            <div id="container-i3"  class="container"></div>
+            <div id="container-i4"  class="container"></div>
+        </div>
+        <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div> 
+        <div id="containerfijo"></div>
+
+        <script type="text/javascript" src="dinamico.js" ></script>
+
+        <script type="text/javascript" src="medidor.js"></script>
+        <script type="text/javascript" src="fijo.js"></script>
+
+	</body>
+</html>
